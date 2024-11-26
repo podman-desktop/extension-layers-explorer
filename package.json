@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-redundant-undefined": "^1.0.0",
     "eslint-plugin-sonarjs": "^2.0.4",
-    "prettier": "^3.2.4",
+    "prettier": "^3.4.0",
     "typescript": "5.7.2",
     "validator": "^13.11.0",
     "vite": "^5.4.11",
