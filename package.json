@@ -48,7 +48,7 @@
     "eslint-plugin-etc": "^2.0.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-redundant-undefined": "^1.0.0",
-    "eslint-plugin-sonarjs": "^2.0.4",
+    "eslint-plugin-sonarjs": "^3.0.0",
     "prettier": "^3.4.1",
     "typescript": "5.7.2",
     "validator": "^13.11.0",
