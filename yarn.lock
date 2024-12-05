@@ -1294,10 +1294,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@podman-desktop/api@^1.14.1":
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.14.1.tgz#2721fb4cc473e3653cf00d23b2fb64234b6a1f5e"
-  integrity sha512-mOX5XWAomOXgXt/S5o13t9LXSHylg8xvAzWYwIrHkXYQL6fy6QqChroezx6MlSotJ6bj1peHh0ToFfxVHTa79w==
+"@podman-desktop/api@^1.14.2":
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.14.2.tgz#e6434afa3b8f02a5b72fd092fbe27f53d207eb8a"
+  integrity sha512-s/f0mpgnhmVNAz3nhQ39Ce+36nnlEah3X3pQEKOlPuGn00eM3fHT3TOhcHvy4xURLXljn/mK4gUABofRVXblng==
 
 "@rollup/rollup-android-arm-eabi@4.27.4":
   version "4.27.4"
