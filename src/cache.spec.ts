@@ -327,7 +327,7 @@ describe('cache', () => {
     mocks.fsRm.mockRejectedValue(err);
     await cache.deleteCacheFile('/some/file');
     expect(mocks.fsRm).toHaveBeenCalledWith('/path/to/extension/cache/v1/some/file');
-    expect(mocks.consoleWarnMock).toHaveBeenCalledWith(`error deleting cache file /some/file`, err);
+    expect(mocks.consoleWarnMock).toHaveBeenCalledWith('error deleting cache file /some/file', err);
   });
 
   it('delete does not log a warning in console if there is an ENOENT error', async () => {
