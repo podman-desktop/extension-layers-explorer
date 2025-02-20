@@ -32,6 +32,7 @@ const mocks = vi.hoisted(() => ({
   fsStatSync: vi.fn(),
   fsWriteFile: vi.fn(),
   fsMkdir: vi.fn(),
+  fsRm: vi.fn(),
 }));
 
 vi.mock('fs/promises', async () => {
@@ -41,6 +42,7 @@ vi.mock('fs/promises', async () => {
     readdir: mocks.fsReaddir,
     writeFile: mocks.fsWriteFile,
     mkdir: mocks.fsMkdir,
+    rm: mocks.fsRm,
   };
 });
 
@@ -317,5 +319,23 @@ describe('cache', () => {
     vi.spyOn(cache, 'limitSize').mockResolvedValue();
     await cache.save({ Id: 'sha256:1' } as ImageInfo, { layers: [] });
     expect(mocks.fsWriteFile).not.toHaveBeenCalled();
+  });
+
+  it('delete logs a warning in console if there is an error that is not ENOENT', async () => {
+    const err: Error & { code?: string } = new Error('error deleting image cache');
+    err.code = 'ERR1';
+    mocks.fsRm.mockRejectedValue(err);
+    await cache.deleteCacheFile('/some/file');
+    expect(mocks.fsRm).toHaveBeenCalledWith('/path/to/extension/cache/v1/some/file');
+    expect(mocks.consoleWarnMock).toHaveBeenCalledWith('error deleting cache file /some/file', err);
+  });
+
+  it('delete does not log a warning in console if there is an ENOENT error', async () => {
+    const err: Error & { code?: string } = new Error('error deleting image cache');
+    err.code = 'ENOENT';
+    mocks.fsRm.mockRejectedValue(err);
+    await cache.deleteCacheFile('/some/file');
+    expect(mocks.fsRm).toHaveBeenCalledWith('/path/to/extension/cache/v1/some/file');
+    expect(mocks.consoleWarnMock).not.toHaveBeenCalled();
   });
 });

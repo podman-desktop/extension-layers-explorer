@@ -108,7 +108,13 @@ export class Cache {
   }
 
   public async deleteCacheFile(filename: string): Promise<void> {
-    await rm(path.join(this.getRootDir(), filename));
+    try {
+      await rm(path.join(this.getRootDir(), filename));
+    } catch (error: unknown) {
+      if (this.isErrorWithCode(error) && error.code !== 'ENOENT') {
+        console.warn(`error deleting cache file ${filename}`, error);
+      }
+    }
   }
 
   private getRootDir(): string {
