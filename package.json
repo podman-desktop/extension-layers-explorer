@@ -34,7 +34,7 @@
     "watch": "vite build -w"
   },
   "dependencies": {
-    "tar": "^7.4.3"
+    "tar": "^7.4.4"
   },
   "devDependencies": {
     "@podman-desktop/api": "^1.21.0",
