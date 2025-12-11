@@ -37,7 +37,7 @@
     "tar": "^7.5.2"
   },
   "devDependencies": {
-    "@podman-desktop/api": "^1.24.1",
+    "@podman-desktop/api": "^1.24.2",
     "@types/node": "^24",
     "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^6.19.1",
