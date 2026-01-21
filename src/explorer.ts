@@ -82,7 +82,7 @@ export class Explorer {
 
     const configFile = manifest[0].Config;
     const config = JSON.parse(await readFile(path.join(tmpdir, configFile), 'utf-8'));
-    const history: History[] = config.history;
+    const history: History[] | undefined = config.history;
     const layersResult: extensionApi.ImageFilesystemLayer[] = [];
     for (const layer of layers) {
       const currentLayer: extensionApi.ImageFilesystemLayer = {
@@ -125,7 +125,7 @@ export class Explorer {
     }
 
     let i = layersResult.length - 1;
-    for (const histo of history.slice().reverse()) {
+    for (const histo of history?.slice().reverse() ?? []) {
       if (histo.empty_layer) {
         continue;
       }
