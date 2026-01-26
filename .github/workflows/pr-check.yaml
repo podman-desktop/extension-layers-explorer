@@ -32,12 +32,12 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
           node-version: 24
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: "3.x"
 
@@ -51,7 +51,7 @@ jobs:
         id: yarn-cache-dir-path-unix
         run: echo "dir=$(yarn cache dir)" >> ${GITHUB_OUTPUT}
 
-      - uses: actions/cache@v5
+      - uses: actions/cache@8b402f58fbc84540c8b491a91e594a4576fec3d7 # v5.0.2
         if: ${{ matrix.os=='windows-2022' }}
         id: yarn-cache-windows
         with:
@@ -60,7 +60,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - uses: actions/cache@v5
+      - uses: actions/cache@8b402f58fbc84540c8b491a91e594a4576fec3d7 # v5.0.2
         if: ${{ matrix.os=='ubuntu-24.04' }}
         id: yarn-cache-unix
         with:
