@@ -478,10 +478,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@podman-desktop/api@^1.24.2":
-  version "1.24.2"
-  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.24.2.tgz#d364c1df3ac10604a3de76245c83a1338630a74a"
-  integrity sha512-k1q+FpLtuotjsOkiXUlk7EO2FmRsSAehnyyFTZj/9fHUtYVkit7vy4eAHRvt9KqF3Xujm7jqHFNkuJtfdF01kw==
+"@podman-desktop/api@^1.25.1":
+  version "1.25.1"
+  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.25.1.tgz#f70318ba57a2a11743916ef398c403615214fb14"
+  integrity sha512-OTsf2q0g5GavfalYFpOtyn8QVVkLKKJOH1zMabqcIK7yTpu093FRCQY/hBdUYx25UyEXhtX4v7QAP0+lc9B+jw==
 
 "@rollup/rollup-android-arm-eabi@4.46.2":
   version "4.46.2"
