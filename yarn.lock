@@ -345,10 +345,10 @@
   dependencies:
     esquery "^1.4.0"
 
-"@podman-desktop/api@^1.25.1":
-  version "1.25.1"
-  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.25.1.tgz#f70318ba57a2a11743916ef398c403615214fb14"
-  integrity sha512-OTsf2q0g5GavfalYFpOtyn8QVVkLKKJOH1zMabqcIK7yTpu093FRCQY/hBdUYx25UyEXhtX4v7QAP0+lc9B+jw==
+"@podman-desktop/api@^1.26.1":
+  version "1.26.1"
+  resolved "https://registry.yarnpkg.com/@podman-desktop/api/-/api-1.26.1.tgz#20668c3fee1c38e08c9a1ebc95ce1723b912fe42"
+  integrity sha512-mp6+UgOY/lzAy6ieeyWL9xPEdYiYEig5a5vLbmDFZu7/y/uihvxUQQ75VGZQeq37I2xpDztll95fY/NdypoZ1w==
 
 "@rolldown/binding-android-arm64@1.0.0-rc.11":
   version "1.0.0-rc.11"
