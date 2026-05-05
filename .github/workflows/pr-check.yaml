@@ -33,57 +33,35 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - uses: pnpm/action-setup@8912a9102ac27614460f54aedde9e1e7f9aec20d # v6.0.5
+        name: Install pnpm
+        with:
+          run_install: false
+
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: 24
+          cache: 'pnpm'
 
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: "3.x"
 
-      - name: Get yarn cache directory path (Windows)
-        if: ${{ matrix.os=='windows-2022' }}
-        id: yarn-cache-dir-path-windows
-        run: echo "dir=$(yarn cache dir)" >> ${env:GITHUB_OUTPUT}
-
-      - name: Get yarn cache directory path (Linux)
-        if: ${{ matrix.os=='ubuntu-24.04' }}
-        id: yarn-cache-dir-path-unix
-        run: echo "dir=$(yarn cache dir)" >> ${GITHUB_OUTPUT}
-
-      - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
-        if: ${{ matrix.os=='windows-2022' }}
-        id: yarn-cache-windows
-        with:
-          path: ${{ steps.yarn-cache-dir-path-windows.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
-        if: ${{ matrix.os=='ubuntu-24.04' }}
-        id: yarn-cache-unix
-        with:
-          path: ${{ steps.yarn-cache-dir-path-unix.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: yarn
-        run: |
-          yarn --frozen-lockfile --network-timeout 180000
+      - name: Execute pnpm
+        run: pnpm install
 
         # skip formatter on windows
       - name: Formatter
         if: ${{ matrix.os=='ubuntu-24.04' }}
-        run: yarn format:check
+        run: pnpm format:check
 
       - name: Linter
-        run: yarn lint:check
+        run: pnpm lint:check
 
 #      - name: Run Tests
-#        run: yarn test
+#        run: pnpm test
 
       - name: Run Build
-        run: yarn build
+        run: pnpm build
         timeout-minutes: 40

@@ -174,6 +174,6 @@ describe('getFilesystemLayers', () => {
         Containers: 1,
         Digest: '',
       }),
-    ).rejects.toThrowError('Error: an error');
+    ).rejects.toThrow('Error: an error');
   });
 });
