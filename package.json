@@ -1,5 +1,7 @@
 {
   "name": "layers-explorer",
+  "repository": "https://github.com/podman-desktop/extension-layers-explorer",
+  "homepage": "https://github.com/podman-desktop/extension-layers-explorer#readme",
   "displayName": "Image Layers Explorer",
   "description": "Explore the files inside the different layers of a container image",
   "version": "0.4.0-next",
