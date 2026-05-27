@@ -38,6 +38,11 @@
   "dependencies": {
     "tar": "^7.5.15"
   },
+  "pnpm": {
+    "overrides": {
+      "brace-expansion@>=5.0.0 <5.0.6": ">=5.0.6"
+    }
+  },
   "devDependencies": {
     "@podman-desktop/api": "^1.27.2",
     "@types/node": "^24",
