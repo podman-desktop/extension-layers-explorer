@@ -63,11 +63,11 @@ importers:
         specifier: ^13.15.35
         version: 13.15.35
       vite:
-        specifier: ^8.1.0
-        version: 8.1.0(@types/node@24.13.2)(yaml@2.9.0)
+        specifier: ^8.1.2
+        version: 8.1.2(@types/node@24.13.2)(yaml@2.9.0)
       vitest:
         specifier: ^4
-        version: 4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0))
+        version: 4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0))
 
 packages:
 
@@ -1868,8 +1868,8 @@ packages:
     resolution: {integrity: sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==}
     engines: {node: '>= 0.10'}
 
-  vite@8.1.0:
-    resolution: {integrity: sha512-BuJcQK/56NQTWDGn4ABea3q4SSBdNPWwNZKTkkUpcMPnLoquSYH8llRtSUIgoL1KSCpHt5eghLShn50mH36y7Q==}
+  vite@8.1.2:
+    resolution: {integrity: sha512-6YYPbRXTxx6bRXmOn7XdnQAy5DQNHhDgtjhDHI13oe4pY93kkcdGJWxpGwOm++/Wh0QpQhDrpIoVMrmrsI5AGQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2502,7 +2502,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.1.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0))
+      vitest: 4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0))
 
   '@vitest/expect@4.1.5':
     dependencies:
@@ -2513,13 +2513,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.5(vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0))':
+  '@vitest/mocker@4.1.5(vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0))':
     dependencies:
       '@vitest/spy': 4.1.5
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.1.0(@types/node@24.13.2)(yaml@2.9.0)
+      vite: 8.1.2(@types/node@24.13.2)(yaml@2.9.0)
 
   '@vitest/pretty-format@4.1.5':
     dependencies:
@@ -4004,7 +4004,7 @@ snapshots:
 
   validator@13.15.35: {}
 
-  vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0):
+  vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -4016,10 +4016,10 @@ snapshots:
       fsevents: 2.3.3
       yaml: 2.9.0
 
-  vitest@4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0)):
+  vitest@4.1.5(@types/node@24.13.2)(@vitest/coverage-v8@4.1.5)(vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.5
-      '@vitest/mocker': 4.1.5(vite@8.1.0(@types/node@24.13.2)(yaml@2.9.0))
+      '@vitest/mocker': 4.1.5(vite@8.1.2(@types/node@24.13.2)(yaml@2.9.0))
       '@vitest/pretty-format': 4.1.5
       '@vitest/runner': 4.1.5
       '@vitest/snapshot': 4.1.5
@@ -4036,7 +4036,7 @@ snapshots:
       tinyexec: 1.1.2
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 8.1.0(@types/node@24.13.2)(yaml@2.9.0)
+      vite: 8.1.2(@types/node@24.13.2)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.13.2
