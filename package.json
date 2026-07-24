@@ -8,7 +8,7 @@
   "icon": "icon.png",
   "publisher": "podman-desktop",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48",
+  "packageManager": "pnpm@11.16.0+sha512.b767e9a98fc87aec0f42daefcd0e84941c2cdb45d73c4e1e68860fb2bdfdbe032ab592105479e5e05c237f740c8a5ffdbbb52385797ddc2296745a1bbb883e8d",
   "engines": {
     "node": ">=24.0.0",
     "podman-desktop": ">=1.12.0"
@@ -39,14 +39,6 @@
   },
   "dependencies": {
     "tar": "^7.5.21"
-  },
-  "pnpm": {
-    "overrides": {
-      "brace-expansion@>=5.0.0 <5.0.6": ">=5.0.6",
-      "brace-expansion@<1.1.16": "1.1.16",
-      "minimatch@>=9.0.0 <9.0.7": "9.0.7",
-      "js-yaml": ">=4.3.0 <5.0.0"
-    }
   },
   "devDependencies": {
     "@podman-desktop/api": "^1.28.3",
