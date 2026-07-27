@@ -54,7 +54,7 @@
     "eslint-plugin-redundant-undefined": "^1.0.0",
     "eslint-plugin-sonarjs": "^4.2.0",
     "prettier": "^3.9.6",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "validator": "^13.15.35",
     "vite": "^8.1.5",
     "vitest": "^4"
