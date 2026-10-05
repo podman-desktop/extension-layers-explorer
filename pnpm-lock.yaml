@@ -24,7 +24,7 @@ importers:
         version: 1.29.1
       '@types/node':
         specifier: ^24
-        version: 24.19.0
+        version: 24.19.1
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.71.0
         version: 8.71.0(@typescript-eslint/parser@8.71.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
@@ -66,10 +66,10 @@ importers:
         version: 13.15.35
       vite:
         specifier: ^8.3.2
-        version: 8.3.2(@types/node@24.19.0)(yaml@2.9.1)
+        version: 8.3.2(@types/node@24.19.1)(yaml@2.9.1)
       vitest:
         specifier: ^5
-        version: 5.0.0(@types/node@24.19.0)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1))
+        version: 5.0.0(@types/node@24.19.1)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1))
 
 packages:
 
@@ -306,8 +306,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@24.19.0':
-    resolution: {integrity: sha512-zY+5tKxXdhGh1PYI0ac+7juvEu4OI6vWtVVoj5i2m42jxAY1U+zHGt6QCyOFwykdP62sM3MJ9stoYYUw5aCWew==}
+  '@types/node@24.19.1':
+    resolution: {integrity: sha512-aS3/DG0oM05K0RIXXP+hKjinGG5IgSSVGzswZxW3O0sS3pH4/fycXundUC9XsszgKCk4gHXylTEK6hyFxVxnoQ==}
 
   '@types/semver@7.7.1':
     resolution: {integrity: sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA==}
@@ -2170,7 +2170,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@24.19.0':
+  '@types/node@24.19.1':
     dependencies:
       undici-types: 7.24.6
 
@@ -2445,7 +2445,7 @@ snapshots:
       obug: 2.2.1
       std-env: 4.2.0
       tinyrainbow: 3.1.1
-      vitest: 5.0.0(@types/node@24.19.0)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1))
+      vitest: 5.0.0(@types/node@24.19.1)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1))
 
   '@vitest/istanbul-lib-coverage@1.0.1': {}
 
@@ -2453,14 +2453,14 @@ snapshots:
     dependencies:
       '@vitest/istanbul-lib-coverage': 1.0.1
 
-  '@vitest/mocker@5.0.0(vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1))':
+  '@vitest/mocker@5.0.0(vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.0.0
       estree-walker: 3.0.3
       magic-string: 1.3.1
     optionalDependencies:
-      vite: 8.3.2(@types/node@24.19.0)(yaml@2.9.1)
+      vite: 8.3.2(@types/node@24.19.1)(yaml@2.9.1)
 
   '@vitest/spy@5.0.0': {}
 
@@ -3900,7 +3900,7 @@ snapshots:
 
   validator@13.15.35: {}
 
-  vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1):
+  vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -3908,14 +3908,14 @@ snapshots:
       rolldown: 1.2.12
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 24.19.0
+      '@types/node': 24.19.1
       fsevents: 2.3.3
       yaml: 2.9.1
 
-  vitest@5.0.0(@types/node@24.19.0)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1)):
+  vitest@5.0.0(@types/node@24.19.1)(@vitest/coverage-v8@5.0.0)(vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.0(vite@8.3.2(@types/node@24.19.0)(yaml@2.9.1))
+      '@vitest/mocker': 5.0.0(vite@8.3.2(@types/node@24.19.1)(yaml@2.9.1))
       chai: 6.2.2
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
@@ -3926,10 +3926,10 @@ snapshots:
       tinybench: 6.1.4
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
-      vite: 8.3.2(@types/node@24.19.0)(yaml@2.9.1)
+      vite: 8.3.2(@types/node@24.19.1)(yaml@2.9.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 24.19.0
+      '@types/node': 24.19.1
       '@vitest/coverage-v8': 5.0.0(vitest@5.0.0)
     transitivePeerDependencies:
       - msw
