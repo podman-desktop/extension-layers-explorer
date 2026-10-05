@@ -36,7 +36,7 @@
       }
     }
   },
-  "plugins": ["@typescript-eslint", "sonarjs", "etc", "redundant-undefined"],
+  "plugins": ["@typescript-eslint", "sonarjs", "etc"],
   "ignorePatterns": [
     "node_modules/**",
     "**/dist/**"
@@ -90,7 +90,6 @@
     "sonarjs/no-small-switch": "off",
     "sonarjs/no-ignored-exceptions": "off",
     "etc/no-commented-out-code": "error",
-    "etc/no-deprecated": "off",
-    "redundant-undefined/redundant-undefined": "error"
+    "etc/no-deprecated": "off"
   }
 }
