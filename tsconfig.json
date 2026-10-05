@@ -15,7 +15,8 @@
     "types": [
         "node",
     ],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "useUnknownInCatchVariables": true
   },
 "include": [
     "src",
