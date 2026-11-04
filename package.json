@@ -42,6 +42,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@podman-desktop/api": "^1.30.5",
+    "@podman-desktop/eslint-config": "^0.1.0",
     "@types/node": "^24",
     "@vitest/coverage-v8": "^5",
     "eslint": "^10.14.0",
