@@ -2,10 +2,12 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import js from '@eslint/js';
 import importX from 'eslint-plugin-import-x';
 import sonarjs from 'eslint-plugin-sonarjs';
+import podmanDesktop from '@podman-desktop/eslint-config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
+  ...podmanDesktop,
   globalIgnores([
     '**/node_modules/**',
     '**/dist/**',
