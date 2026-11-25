@@ -31,7 +31,7 @@ export default defineConfig([
     ],
     languageOptions: {
       globals: globals.node,
-      parserOptions: { project: './tsconfig.json', tsconfigRootDir: import.meta.dirname },
+      parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname },
     },
     settings: {
       'import-x/extensions': ['.ts', '.tsx', '.js'],
